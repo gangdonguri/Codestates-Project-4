@@ -71,6 +71,7 @@ resource "aws_ecs_service" "final_ecs_service" {
     container_port   = 3000
   }
 
+
   depends_on = [
     aws_lb_listener.http_forward,
     aws_iam_role_policy_attachment.ecs_task_execution_role_policy
@@ -80,11 +81,13 @@ resource "aws_ecs_service" "final_ecs_service" {
 data "template_file" "service" {
   template = file("./demo-td-revision6.json.tpl")
   vars = {
-    db_hostname        = aws_secretsmanager_secret.hostname.arn
-    db_reader_hostname = aws_secretsmanager_secret.read_hostname.arn
-    db_password        = aws_secretsmanager_secret.db_password.arn
-    db_name            = aws_secretsmanager_secret.db_username.arn
-    database           = aws_secretsmanager_secret.database.arn
+    db_write_hostname     = data.aws_secretsmanager_secret.rds_write_hostname.arn
+    db_reader_hostname    = data.aws_secretsmanager_secret.rds_read_hostname.arn
+    db_password           = data.aws_secretsmanager_secret.rds_password.arn
+    db_name               = data.aws_secretsmanager_secret.rds_username.arn
+    database              = data.aws_secretsmanager_secret.rds_database.arn
+    aws_access_key_id     = data.aws_secretsmanager_secret.aws_access_key_id.arn
+    aws_secret_access_key = data.aws_secretsmanager_secret.aws_secret_access_key.arn
 
 
 

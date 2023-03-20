@@ -1,46 +1,28 @@
-resource "aws_secretsmanager_secret" "db_username" {
-  name = "finalsecret/db_username"
+data "aws_secretsmanager_secret" "rds_read_hostname" {
+  name = "final-terraform/readendpoint"
 }
 
-resource "aws_secretsmanager_secret" "db_password" {
-  name = "finalsecret/db_password"
+data "aws_secretsmanager_secret" "rds_write_hostname" {
+  name = "final-terraform/write-endpoint"
 }
 
-resource "aws_secretsmanager_secret" "database" {
-  name = "finalsecret/database"
+data "aws_secretsmanager_secret" "rds_username" {
+  name = "final-terraform/db-username"
 }
 
-resource "aws_secretsmanager_secret" "hostname" {
-  name = "mysecret/hostname"
+data "aws_secretsmanager_secret" "rds_password" {
+  name = "final-terraform/db-password"
 }
 
-resource "aws_secretsmanager_secret" "read_hostname" {
-  name = "mysecret/readhostname"
+data "aws_secretsmanager_secret" "rds_database" {
+  name = "final-terraform/db-database"
 }
 
 
-resource "aws_secretsmanager_secret_version" "db_username" {
-  secret_id     = aws_secretsmanager_secret.db_username.id
-  secret_string = var.database_name
+data "aws_secretsmanager_secret" "aws_access_key_id" {
+  name = "final-terraform/aws-access-key-id"
 }
 
-resource "aws_secretsmanager_secret_version" "db_password" {
-  secret_id     = aws_secretsmanager_secret.db_password.id
-  secret_string = var.database_passward
+data "aws_secretsmanager_secret" "aws_secret_access_key" {
+  name = "final-terraform/aws-secret-access-key"
 }
-
-resource "aws_secretsmanager_secret_version" "database" {
-  secret_id     = aws_secretsmanager_secret.database.id
-  secret_string = var.database
-}
-
-resource "aws_secretsmanager_secret_version" "hostname" {
-  secret_id     = aws_secretsmanager_secret.hostname.id
-  secret_string = aws_rds_cluster.aurora_cluster.endpoint
-}
-
-resource "aws_secretsmanager_secret_version" "read_hostname" {
-  secret_id     = aws_secretsmanager_secret.read_hostname.id
-  secret_string = aws_rds_cluster.aurora_cluster.reader_endpoint
-}
-

@@ -1,7 +1,7 @@
 [
     {
         "name": "final-test-api",
-        "image": "901512289056.dkr.ecr.ap-northeast-2.amazonaws.com/demo-project4:v5",
+        "image": "901512289056.dkr.ecr.ap-northeast-2.amazonaws.com/terraform-test:v0.0.3",
         "cpu": 0,
         "portMappings": [
             {
@@ -19,24 +19,32 @@
         "volumesFrom": [],
         "secrets": [
             {
-                "name": "HOSTNAME",
-                "valueFrom": "${db_hostname}"
+                "name": "WRITE_HOSTNAME",
+                "valueFrom": "${db_write_hostname}:WRITE_HOSTNAME::"
             },
             {
                 "name": "PASSWORD",
-                "valueFrom": "${db_password}"
+                "valueFrom": "${db_password}:PASSWORD::"
             },
             {
                 "name": "DATABASE",
-                "valueFrom": "${database}"
+                "valueFrom": "${database}:DATABASE::"
             },
             {
                 "name": "READ_HOSTNAME",
-                "valueFrom": "${db_reader_hostname}"
+                "valueFrom": "${db_reader_hostname}:READ_HOSTNAME::"
             },
             {
                 "name": "USERNAME",
-                "valueFrom": "${db_name}"
+                "valueFrom": "${db_name}:USERNAME::"
+            },
+            {
+                "name": "AWS_ACCESS_KEY_ID",
+                "valueFrom": "${aws_access_key_id}"
+            },
+            {
+                "name": "AWS_SECRET_ACCESS_KEY",
+                "valueFrom": "${aws_secret_access_key}"
             }
         ],
         "logConfiguration": {
