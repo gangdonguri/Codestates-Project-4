@@ -1,7 +1,7 @@
 [
     {
         "name": "final-test-api",
-        "image": "901512289056.dkr.ecr.ap-northeast-2.amazonaws.com/terraform-test:v0.0.3",
+        "image": "901512289056.dkr.ecr.ap-northeast-2.amazonaws.com/terraform-test:v0.0.5",
         "cpu": 0,
         "portMappings": [
             {
@@ -19,8 +19,8 @@
         "volumesFrom": [],
         "secrets": [
             {
-                "name": "WRITE_HOSTNAME",
-                "valueFrom": "${db_write_hostname}:WRITE_HOSTNAME::"
+                "name": "WRITE_ENDPOINT",
+                "valueFrom": "${db_write_hostname}:WRITE_ENDPOINT::"
             },
             {
                 "name": "PASSWORD",
@@ -31,8 +31,8 @@
                 "valueFrom": "${database}:DATABASE::"
             },
             {
-                "name": "READ_HOSTNAME",
-                "valueFrom": "${db_reader_hostname}:READ_HOSTNAME::"
+                "name": "READ_ENDPOINT",
+                "valueFrom": "${db_reader_hostname}:READ_ENDPOINT::"
             },
             {
                 "name": "USERNAME",
