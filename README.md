@@ -148,7 +148,7 @@
 |[박민혁](https://github.com/Park-Seaweed) 리더|[권광훈](https://github.com/gangdonguri)|[박예빈](https://github.com/yebinnn)|[김민지](https://github.com/si946bi)|
 |:---:|:---:|:---:|:---:|
 |<img src="https://img.shields.io/badge/DevOps-000000?style=for-the-badge&logo=&logoColor=white">|<img src="https://img.shields.io/badge/DevOps-000000?style=for-the-badge&logo=&logoColor=white">|<img src="https://img.shields.io/badge/DevOps-000000?style=for-the-badge&logo=&logoColor=white">|<img src="https://img.shields.io/badge/DevOps-000000?style=for-the-badge&logo=&logoColor=white">|
-|![박민혁 미모티콘](https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FzR6lR%2FbtrNjzHoynR%2FI4iKHEHRzPhXzKSm8xWxL0%2Fimg.png)|![권광훈 미모티콘](https://user-images.githubusercontent.com/87158339/227462281-977f1b83-211c-48b3-8f9f-c25a4f87b76b.png)|![박예빈 미모티콘](https://user-images.githubusercontent.com/119267181/227461192-be169932-94cf-40b0-a10b-b12fa7afa4bf.png)|![Image](https://user-images.githubusercontent.com/106081707/227473794-4846c193-997e-4cf2-b618-d7bb179d3cf0.JPG)|
+|![박민혁 미모티콘](https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FzR6lR%2FbtrNjzHoynR%2FI4iKHEHRzPhXzKSm8xWxL0%2Fimg.png)|![권광훈 미모티콘](https://user-images.githubusercontent.com/87158339/227462281-977f1b83-211c-48b3-8f9f-c25a4f87b76b.png)|![박예빈 미모티콘](https://user-images.githubusercontent.com/119267181/227461192-be169932-94cf-40b0-a10b-b12fa7afa4bf.png)|![image](https://user-images.githubusercontent.com/119267181/227476007-c2bec33c-1950-4abf-b6f7-eaa1d218af93.png)|
 |프론트 코드, 백엔드 코드 작업 및 백엔드 인프라 IaC |모니터링, CI/CD, <br>알림 시스템 IaC| CI/CD, 모니터링, 아키텍처 구성  |CI/CD, 프론트 IaC, 아키텍처 구성|
 <br>
 
