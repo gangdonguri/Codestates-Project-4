@@ -1,17 +1,15 @@
 ## ✨ 프로젝트 소개
 
-### 고가용성 글로벌 팬사이트 <br><br>
+### 고가용성 글로벌 팬사이트 <br>
 
-<br><br>
  시나리오는 아이돌 팬사이트가 글로벌 트래픽이 증가했을 때 순간적으로 급증하는 트래픽에 대응하고 빠르게 인프라를 구성, <br>
  무중단으로 웹서버를 배포하여 사용자가 서비스를 이용할 때 발생하는 다운타임을 최소화하는 시나리오입니다.
 <br>
 
 
-
 - **[발표 자료](https://docs.google.com/presentation/d/13tJ_gnHv7RO3KuGKWGPG14OrM1K35mICUmn3lk0w_ic/edit?usp=sharing)<br>**
-  <br>
-  <br>
+
+<br>
 
 ## 📆 프로젝트 기간 <br>
 
@@ -21,7 +19,6 @@
 </ul>
 
 
-<br>
 <br>
 
 ## 📖 서비스 아키텍쳐<br>
@@ -151,8 +148,8 @@
 |[박민혁](https://github.com/Park-Seaweed) 리더|[권광훈](https://github.com/gangdonguri)|[박예빈](https://github.com/yebinnn)|[김민지](https://github.com/si946bi)|
 |:---:|:---:|:---:|:---:|
 |<img src="https://img.shields.io/badge/DevOps-000000?style=for-the-badge&logo=&logoColor=white">|<img src="https://img.shields.io/badge/DevOps-000000?style=for-the-badge&logo=&logoColor=white">|<img src="https://img.shields.io/badge/DevOps-000000?style=for-the-badge&logo=&logoColor=white">|<img src="https://img.shields.io/badge/DevOps-000000?style=for-the-badge&logo=&logoColor=white">|
-|![박민혁 미모티콘](https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FzR6lR%2FbtrNjzHoynR%2FI4iKHEHRzPhXzKSm8xWxL0%2Fimg.png)|![권광훈 미모티콘](https://user-images.githubusercontent.com/87158339/227462281-977f1b83-211c-48b3-8f9f-c25a4f87b76b.png)|![박예빈 미모티콘](https://user-images.githubusercontent.com/119267181/227461192-be169932-94cf-40b0-a10b-b12fa7afa4bf.png)|![김민지 미모티콘](https://user-images.githubusercontent.com/106081707/227469337-51af3fa5-445f-43e6-8573-f197458c81c8.png)|
-|프론트 코드, 백엔드 코드 작업 및 백엔드 인프라 IaC |모니터링, CI/CD, <br>알림 시스템 IaC| CI/CD, 모니터링  |CI/CD, 프론트 IaC|
+|![박민혁 미모티콘](https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FzR6lR%2FbtrNjzHoynR%2FI4iKHEHRzPhXzKSm8xWxL0%2Fimg.png)|![권광훈 미모티콘](https://user-images.githubusercontent.com/87158339/227462281-977f1b83-211c-48b3-8f9f-c25a4f87b76b.png)|![박예빈 미모티콘](https://user-images.githubusercontent.com/119267181/227461192-be169932-94cf-40b0-a10b-b12fa7afa4bf.png)|![Image](https://user-images.githubusercontent.com/106081707/227473794-4846c193-997e-4cf2-b618-d7bb179d3cf0.JPG)|
+|프론트 코드, 백엔드 코드 작업 및 백엔드 인프라 IaC |모니터링, CI/CD, <br>알림 시스템 IaC| CI/CD, 모니터링, 아키텍처 구성  |CI/CD, 프론트 IaC, 아키텍처 구성|
 <br>
 
 ## 🔧 기술 스택
