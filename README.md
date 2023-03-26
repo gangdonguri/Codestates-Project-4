@@ -76,6 +76,22 @@
 ## 📌 주요 기능
 
 <details> 
+  <summary><strong>Cognito를 이용한 회원가입,로그인<br></strong></summary><br>
+
+![회원가입](https://user-images.githubusercontent.com/118946694/227525192-1cd2bd02-63b9-4a05-b3dd-f15a742c4940.gif)
+ 
+ 개발의 편의성을 위해 회원가입 및 로그인 인증을 AWS SDK를 이용해 Cognito를 이용해 백엔드에서 로직을 구현했으며 데이터베이스에는 회원가입한 유저의 정보를 저장하지않고 닉네임만을 저장합니다.
+ 또한 회원가입시 email과 닉네임을 받아서 로그인시 토큰을 발행하여 프론트로 보내게됩니다.
+ 
+ ![crud구현](https://user-images.githubusercontent.com/118946694/227525266-75bf2ae7-4550-40b2-9dc4-147222ffa69d.gif)
+ 로그인한 회원은 글작성시 AWS SDK Cognito로 API요청을 보내게되면 닉네임이 리턴되며 닉네임을 통해 작성자를 구분하고 글을 수정, 삭제시 토큰을 통해 인증하게됩니다.
+ 
+
+
+<br>  
+</details>
+
+<details> 
   <summary><strong>Terraform IaC 배포 아키텍처<br></strong></summary><br>
 
 ![Image](https://user-images.githubusercontent.com/106081707/227449823-cae7097a-b265-4bc0-8b33-afeea264ab6f.png)
